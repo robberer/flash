@@ -40,7 +40,7 @@ public class DB {
             Class.forName("org.h2.Driver");
 
             conn = DriverManager.getConnection(
-                    "jdbc:h2:db", "", "");
+                    "jdbc:h2:/tmp/flash", "", "");
 
             DatabaseMetaData md = conn.getMetaData();
 
